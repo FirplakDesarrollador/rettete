@@ -87,6 +87,7 @@
         "compression": "~1.8.1",
         "country-flag-emoji-polyfill": "~0.1.8",
         "croner": "~8.1.2",
+        "date-fns": "^2.30.0",
         "dayjs": "~1.11.19",
         "dev-null": "~0.1.1",
         "dotenv": "~16.0.3",

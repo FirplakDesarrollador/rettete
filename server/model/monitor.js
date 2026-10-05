@@ -985,6 +985,7 @@ class Monitor extends BeanModel {
                 await UptimeKumaServer.getInstance().sendMaintenanceListByUserID(this.user_id);
             } else {
                 bean.important = false;
+                await Monitor.sendNotification(isFirstBeat, this, bean);
 
                 if (bean.status === DOWN && this.resendInterval > 0) {
                     ++bean.downCount;
